@@ -17,14 +17,14 @@ symbol += list(r"\|,./<>?")
 
 # 定义加密函数，接受文本和位移值作为参数
 def encrypt(text, values):
-"""
+    """
     Args:
         text: (string)A string that needs to be encrypted
         values (integer): The value of the string offset when encrypting (cannot be a floating-point number!!! ）
     参数：
         text（字符串）：需要加密的字符串
         values （整数）：加密时字符串位移的值(不能为浮点数！！！）
-"""
+    """
     newtext = []  # 用于存储加密后的字符
     for t in text:  # 遍历输入文本中的每个字符
         if t in abc:  # 如果字符是小写字母
@@ -46,14 +46,14 @@ def encrypt(text, values):
 
 # 定义解密函数，接受文本和位移值作为参数
 def decrypt(text, values):
-"""
+    """
     Args:
         text:(string) The string that needs to be decrypted
         values (integer): The value of the string offset at the time of decryption (cannot be floating-point!! ）
     参数：
         text（字符串）：需要解密的字符串
         values （整数）：解密时字符串位移的值(不能为浮点数！！！）
-"""
+    """
     newtext = []  # 用于存储解密后的字符
     for t in text:  # 遍历输入文本中的每个字符
         if t in abc:  # 如果字符是小写字母
